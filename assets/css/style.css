@@ -4,29 +4,115 @@
 body{
     background-color: var(--light-grey);
     font-family: "Poppins", sans-serif;
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 .container{
+    width: 90%;
+    margin: 100px auto 0;
     background-color: var(--white);
     padding: 20px;
+    border-radius: 20px 20px 40% 20px;
+    
 }
 
 .question-class{
     display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--light-grey);
+    padding-bottom: 20px;
 }
-
+.line-inputs{
+    display: flex;
+    padding-bottom: 30px;
+}
+.error-msg{
+    display: none;
+    color: var(--red);
+    font-size: 7px;
+}
 .model{
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
+.model label{
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--grey);
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+}
+
+.model input{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    max-width: 160px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid var(--light-grey);
+    border-radius: 8px;
+}
+
+.model input:hover{
+    border-color: var(--purple);
+}
+
+.btn{
+    width: 65px;
+    margin: 0 auto -50px;
+    background-color: var(--purple);
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    transition: background-color 0.3s ease ;
+}
+
+.btn:hover{
+    background-color: var(--black);
+}
+
 
 .answer{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    font-size: 32px;
+    font-weight: 900;
+    padding-left: 15px;
+    margin-top: 50px;
+    font-style: italic;
+}
+.answer .answer-day,
+.answer .answer-month,
+.answer .answer-year {
+    margin: 0;
+}
+.answer span{
+    color: var(--purple);
+}
+
+.day.error label,
+.month.error label,
+.year.error label {
+    color: var(--red);
+}
+
+.day.error input,
+.month.error input,
+.year.error input {
+    border-color: var(--red);
+}
+
+.day.error .error-msg,
+.month.error .error-msg,
+.year.error .error-msg {
+    display: block; 
+    color: var(--red);   
+    font-style: italic;   
+    font-weight: 400;     
+    margin-top: 6px;      
+    text-align: left;    
 }

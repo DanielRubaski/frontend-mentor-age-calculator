@@ -1,0 +1,19 @@
+@media(min-width: 800px){
+    .container{
+        max-width: 700px;
+    }
+    
+    .answer{
+        font-size: clamp(40px, 5vh, 60px);
+    }
+
+    .btn{
+        width: 80px;
+        height: 80px;
+        margin: 0 0 -60px auto;
+    }
+    .btn img{
+        margin: auto;
+    }
+
+}

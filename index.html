@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,28 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
+
 <body>
     <main class="container">
         <form class="question-class">
-            <div class="model day">
-                <label for="day">DAY</label>
-                <input type="number" id="day" name="day" placeholder="DD">
-                <span class="error-msg">Must be a valid day</span>
-            </div>
-            <div class="model month">
-                <label for="month">MONTH</label>
-                <input type="number" id="month" name="month" placeholder="MM">
-                <span class="error-msg">Must be a valid month</span>
-            </div>
-            <div class="model year">
-                <label for="year">YEAR</label>
-                <input type="number" id="year" name="year" placeholder="YYYY">
-                <span class="error-msg">Must be a valid year</span>
+            <div class="line-inputs">
+                <div class="model day">
+                    <label for="day">DAY</label>
+                    <input type="number" class="error" id="day" name="day" placeholder="DD">
+                    <span class="error-msg">Must be a valid day</span>
+                </div>
+                <div class="model month">
+                    <label for="month">MONTH</label>
+                    <input type="number" id="month" name="month" placeholder="MM">
+                    <span class="error-msg">Must be a valid month</span>
+                </div>
+                <div class="model year">
+                    <label for="year">YEAR</label>
+                    <input type="number" id="year" name="year" placeholder="YYYY">
+                    <span class="error-msg">Must be a valid year</span>
+                </div>
             </div>
             <button type="submit" class="btn">
                 <img src="./assets/images/icon-arrow.svg" alt="imagem de seta">
@@ -37,4 +42,5 @@
         </section>
     </main>
 </body>
+
 </html>
